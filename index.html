@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Omnifood</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,59 +14,172 @@
     />
   </head>
   <body>
-    <section class="hero-section">
-      <div class="hero-container">
-        <div class="hero-text">
-          <h1>A healthy meal delivered to your door, every single day</h1>
-          <p class="hero-summary">
-            The smart 365-days-per-year food subscription that will make you eat
-            healthy again. Tailored to your personal tastes and nutritional
-            needs.
-          </p>
-          <a href="#" class="btn btn-cta margin-right-sm">Start eating well</a>
-          <a href="#" class="btn btn-outline"
-            >Learn more <span>&#x2193;</span></a
-          >
-          <div class="delivered-meals">
-            <div class="delivered-images">
-              <img
-                src="img/customers/customer-1.jpg"
-                alt="Images of people who has used our service"
-              />
-              <img
-                src="img/customers/customer-2.jpg"
-                alt="Images of people who has used our service"
-              />
-              <img
-                src="img/customers/customer-3.jpg"
-                alt="Images of people who has used our service"
-              />
-              <img
-                src="img/customers/customer-4.jpg"
-                alt="Images of people who has used our service"
-              />
-              <img
-                src="img/customers/customer-5.jpg"
-                alt="Images of people who has used our service"
-              />
-              <img
-                src="img/customers/customer-6.jpg"
-                alt="Images of people who has used our service"
-              />
-            </div>
-            <p class="delivered-text">
-              <span>250,000+</span> meals delivered last year
+    <header class="header">
+      <img
+        src="img/omnifood-logo.png"
+        class="logo"
+        alt="Omnifood logo"
+        class="logo"
+      />
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#" class="main-nav-item">Section 1</a></li>
+          <li><a href="#" class="main-nav-item">Section 2</a></li>
+          <li><a href="#" class="main-nav-item">Section 3</a></li>
+          <li><a href="#" class="main-nav-item">Section 4</a></li>
+          <li><a href="#" class="main-nav-item main-nav-cta">Section 5</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--Hero section-->
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>A healthy meal delivered to your door, every single day</h1>
+            <p class="hero-summary">
+              The smart 365-days-per-year food subscription that will make you
+              eat healthy again. Tailored to your personal tastes and
+              nutritional needs.
             </p>
+            <a href="#" class="btn btn-cta margin-right-sm"
+              >Start eating well</a
+            >
+            <a href="#" class="btn btn-outline"
+              >Learn more <span>&#x2193;</span></a
+            >
+            <div class="delivered-meals">
+              <div class="delivered-images">
+                <img
+                  src="img/customers/customer-1.jpg"
+                  alt="Images of people who has used our service"
+                />
+                <img
+                  src="img/customers/customer-2.jpg"
+                  alt="Images of people who has used our service"
+                />
+                <img
+                  src="img/customers/customer-3.jpg"
+                  alt="Images of people who has used our service"
+                />
+                <img
+                  src="img/customers/customer-4.jpg"
+                  alt="Images of people who has used our service"
+                />
+                <img
+                  src="img/customers/customer-5.jpg"
+                  alt="Images of people who has used our service"
+                />
+                <img
+                  src="img/customers/customer-6.jpg"
+                  alt="Images of people who has used our service"
+                />
+              </div>
+              <p class="delivered-text">
+                <span>250,000+</span> meals delivered last year!
+              </p>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="img/hero.png"
+              alt="Women enjoying the food, food in aesthetic bowl, healthy food in square boxed ocnatiners"
+            />
           </div>
         </div>
-        <div class="hero-image">
+      </section>
+      <!--Feature in-->
+      <section class="featured-in-section container">
+        <h3 class="header-featured">As featured In</h3>
+        <div class="featured-in">
           <img
-            src="img/hero.png"
-            alt="Women enjoying the food, food in aesthetic bowl, healthy food in square boxed ocnatiners"
+            class="featured-in-logo"
+            src="img/logos/business-insider.png"
+            alt="Business Insider logo"
+          />
+          <img
+            class="featured-in-logo"
+            src="img/logos/forbes.png"
+            alt="Forbes logo"
+          />
+          <img
+            class="featured-in-logo"
+            src="img/logos/techcrunch.png"
+            alt="Tech Crunch logo"
+          />
+          <img
+            class="featured-in-logo"
+            src="img/logos/the-new-york-times.png"
+            alt="The new york times logo"
+          />
+          <img
+            class="featured-in-logo"
+            src="img/logos/usa-today.png"
+            alt="USA Today logo"
           />
         </div>
-      </div>
-    </section>
+      </section>
+      <!--How it works section-->
+      <section class="how-it-works container">
+        <span class="sub-heading">How it Works</span>
+        <h2 class="secondary-header">
+          Your daily dose of health in 3 simple steps
+        </h2>
+        <div class="how-it-work-steps">
+          <div class="step-text">
+            <span class="step-number">01</span>
+            <h3 class="header-teritiary">
+              Tell us what you like (and what not)
+            </h3>
+            <p class="step-description">
+              Never again waste time thinking about what to eat! Omnifood AI
+              will create a 100% personalized weekly meal plan just for you. It
+              makes sure you get all the nutrients and vitamins you need, no
+              matter what diet you follow!
+            </p>
+          </div>
+          <div class="step-img">
+            <img
+              class="step-image"
+              src="img/app/app-screen-1.png"
+              alt="Omnifood app on iPhone where people can select the ingredients they like and also mark the ones they don't like"
+            />
+          </div>
+          <div class="step-img">
+            <img
+              class="step-image"
+              src="img/app/app-screen-1.png"
+              alt="Omnifood app on iPhone where people can select the ingredients they like and also mark the ones they don't like"
+            />
+          </div>
+          <div class="step-text">
+            <span class="step-number">02</span>
+            <h3 class="header-teritiary">Approve your weekly meal plan</h3>
+            <p class="step-description">
+              Once per week, approve the meal plan generated for you by Omnifood
+              AI. You can change ingredients, swap entire meals, or even add
+              your own recipes.
+            </p>
+          </div>
+          <div class="step-text">
+            <span class="step-number">03</span>
+            <h3 class="header-teritiary">Receive meals at convenient time</h3>
+            <p class="step-description">
+              Best chefs in town will cook your selected meal every day, and we
+              will deliver it to your door whenever works best for you. You can
+              change delivery schedule and address daily!
+            </p>
+          </div>
+          <div class="step-img">
+            <img
+              class="step-image"
+              src="img/app/app-screen-1.png"
+              alt="Omnifood app on iPhone where people can select the ingredients they like and also mark the ones they don't like"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- <footer>
       <p>&copy; 2023 Omnifood. All rights reserved.</p>
     </footer> -->
