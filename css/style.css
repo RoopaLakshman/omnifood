@@ -177,7 +177,9 @@
 
 /* How it works section */
 .sub-heading,
-.meals-sub-header {
+.meals-sub-header,
+.testimonial-sub-header,
+.pricing-sub-header {
   display: inline-block;
   text-transform: uppercase;
   color: #e67e22;
@@ -188,7 +190,9 @@
 }
 
 .secondary-header,
-.meals-header {
+.meals-header,
+.testimonial-header,
+.pricing-header {
   font-size: 4.4rem;
   color: #333;
   font-weight: 700;
@@ -414,4 +418,155 @@
   text-decoration: none;
   color: #cf711f;
   border-bottom: 1px solid transparent;
+}
+
+/* Testimonial and Gallery section */
+.testimonial-gallery-container {
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.testimonial {
+  padding: 4.8rem 9.6rem;
+}
+
+.testimonial-card {
+  padding: 0rem 4.8rem 4.8rem 0rem;
+}
+
+.testimonial-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.testimonial-quote {
+  font-size: 1.6rem;
+  color: #333;
+  line-height: 1.8;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+}
+
+.testimonial-image {
+  width: 20%;
+  border-radius: 50%;
+  border: 1px solid #a54d00;
+}
+
+.testimonial-author {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1.2rem 0;
+  color: #707070;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+.gallery-image {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-image:hover {
+  width: 100%;
+  transform: scale(1.05);
+}
+
+/* Pricing */
+.pricing {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rate-card {
+  border: 2px solid #fdf2e9;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.8rem;
+  gap: 2.4rem;
+}
+
+.pricing-type {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #cf711f;
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.price {
+  font-size: 7.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.price span {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.per-month {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #777;
+}
+
+.rate-card--popular {
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-list {
+  list-style: none;
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 400;
+}
+
+.pricing-list li {
+  display: flex;
+  align-items: center;
+  column-gap: 1.6rem;
+  padding: 1.4rem 0;
+}
+
+.pricing-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #e67e22;
+}
+
+.rate-card--popular::after {
+  content: "Best Value";
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #333;
+  text-transform: uppercase;
+  background-color: #ffd43b;
+  padding: 1rem 3.2rem;
+  position: absolute;
+  top: 4%;
+  right: -12%;
+  transform: rotate(45deg);
 }
