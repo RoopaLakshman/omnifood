@@ -88,26 +88,30 @@
   margin-bottom: 6.4rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
-  padding: 1.8rem;
+  padding: 1.6rem 3.2rem;
   border-radius: 1.2rem;
   font-size: 1.6rem;
   font-weight: 600;
   text-decoration: none;
+  cursor: pointer;
+  border: none;
 }
 
 .btn:hover,
 .btn:active {
   display: inline-block;
-  padding: 1.8rem;
+  padding: 1.6rem 3.2rem;
   border-radius: 1.2rem;
   font-size: 1.6rem;
   font-weight: 600;
   text-decoration: none;
   /*Put transition on original state*/
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .btn-cta:link,
@@ -368,9 +372,6 @@
 .omnifood-icon {
   width: 2.4rem;
   height: 2.4rem;
-}
-.meal-icon,
-.diet-icon {
   stroke: #e67e22;
 }
 
@@ -569,4 +570,135 @@
   top: 4%;
   right: -12%;
   transform: rotate(45deg);
+}
+
+.pricing-tnc {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  padding: 3.2rem;
+  font-weight: 500;
+}
+
+/* Feature section */
+
+.features-section {
+  display: flex;
+  gap: 4.8rem;
+  margin: 9.6rem 0rem;
+}
+
+.omnifood-icon--feature {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #e67e22;
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.feature-content span {
+  font-size: 2.4rem;
+  line-height: 1.6;
+  font-weight: 700;
+  color: #333;
+}
+
+.feature-content {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.submit-form-section {
+  padding: 9.6rem 0;
+}
+
+.grid--2-col-form {
+  grid-template-columns: 2fr 1fr;
+  background-image: linear-gradient(to right bottom, #eb984e, #eb984e);
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.015);
+}
+
+.form-box {
+  padding: 4.8rem;
+}
+
+.submit-form-header {
+  font-size: 4.4rem;
+  font-weight: 700;
+  color: #2e1907;
+  margin-bottom: 3.2rem;
+}
+
+.submit-form-sub-header {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #2e1907;
+}
+
+.submit-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2.4rem;
+  column-gap: 3.2rem;
+  padding: 4.8rem 0;
+  color: #2e1907;
+}
+
+.submit-form label {
+  display: block;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #2e1907;
+  margin-bottom: 1.2rem;
+}
+
+.submit-form-input,
+.submit-form-select {
+  width: 100%;
+  font-family: inherit;
+  color: inherit;
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  font-weight: 500;
+  border-radius: 1.2rem;
+  border: none;
+  background-color: #fae5d3;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.submit-form-input::placeholder {
+  color: #aaa;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(165, 77, 0, 0.5);
+}
+
+.picture-box {
+  background-image: linear-gradient(
+      rgba(254, 174, 104, 0.3),
+      rgba(184, 100, 27, 0.4)
+    ),
+    url(../img/eating.jpg);
+  background-size: cover;
+  background-position: center;
 }
