@@ -612,7 +612,7 @@
 }
 
 .submit-form-section {
-  padding: 9.6rem 0;
+  padding: 9.6rem 9.6rem 12.8rem 9.6rem;
 }
 
 .grid--2-col-form {
@@ -701,4 +701,81 @@
     url(../img/eating.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  gap: 4.8rem;
+}
+
+.sm-links {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.social-media:link,
+.social-media:visited {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.social-media:hover,
+.social-media:active {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  color: #555;
+}
+
+.social-media-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: inherit;
+}
+
+.copyright {
+  margin-top: auto;
+}
+
+.footer-nav {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #555;
+  font-weight: 500;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.footer-nav span {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #555;
+  font-weight: 900;
+  margin-bottom: 3.2rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #333;
 }
