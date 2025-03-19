@@ -22,7 +22,7 @@
   display: flex;
   list-style: none;
   align-items: center;
-  gap: 3rem;
+  gap: 4.8rem;
 }
 
 .main-nav-item:link,
@@ -84,7 +84,7 @@
   color: #333;
   text-decoration: none;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.6;
   margin-bottom: 6.4rem;
 }
 
