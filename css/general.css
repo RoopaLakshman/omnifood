@@ -43,6 +43,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 /* Body Default Styling */
@@ -52,12 +53,13 @@ body {
   color: #555;
   font-weight: 400;
   font-size: 1.2rem;
+  overflow-x: hidden;
 }
 
 .container {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0 2.4rem;
+  padding: 0 3.2rem;
 }
 
 /*Helper class*/

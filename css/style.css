@@ -4,6 +4,7 @@
   align-items: center;
   background-color: #fdf2e9;
   padding: 0 4.8rem;
+  position: relative;
 
   /*To keep the header sticky*/
   height: 9.2rem;
@@ -55,6 +56,22 @@
   color: #fdf2e9;
 }
 
+.mobile-nav {
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
+.mobile-nav-icon {
+  height: 3.6rem;
+  width: 3.6rem;
+  color: #333;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
 .hero-section {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.8rem 0;
@@ -66,7 +83,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 9.8rem;
+  gap: 9.6rem;
   padding: 0 4.8rem;
 }
 
@@ -486,8 +503,9 @@
 
 /* Pricing */
 .pricing {
-  display: flex;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6.4rem;
   justify-content: space-around;
   align-items: center;
 }
@@ -583,7 +601,8 @@
 /* Feature section */
 
 .features-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 4.8rem;
   margin: 9.6rem 0rem;
 }
@@ -612,10 +631,11 @@
 }
 
 .submit-form-section {
-  padding: 9.6rem 9.6rem 12.8rem 9.6rem;
+  padding: 4.8rem 0 12.8rem;
 }
 
 .grid--2-col-form {
+  /*2/3 = 66.66% + 1/3 = 33.33%*/
   grid-template-columns: 2fr 1fr;
   background-image: linear-gradient(to right bottom, #eb984e, #eb984e);
   border-radius: 2rem;
