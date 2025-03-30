@@ -107,7 +107,7 @@ Instead 1rem = 1em = 16px*/
 
   .mobile-nav {
     display: block;
-    background-color: none;
+    z-index: 9999;
   }
 
   .btn--form {

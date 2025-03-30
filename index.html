@@ -3,10 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omnifood</title>
+    <meta name="description" content="Omnifood is a food delivery service that delivers healthy meals to your door every day." />
+    <meta name="keywords" content="food delivery, healthy food, meal delivery, food subscription, healthy meals, omnifood" />
+    <title>Omnifood &dash Never cook again</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/queries.css" />
+
+    <link rel="icon" href="img/favicon-copy.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,16 +31,16 @@
       />
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#" class="main-nav-item">How it works</a></li>
-          <li><a href="#" class="main-nav-item">Meals</a></li>
-          <li><a href="#" class="main-nav-item">Testimonials</a></li>
-          <li><a href="#" class="main-nav-item">Pricing</a></li>
-          <li><a href="#" class="main-nav-item main-nav-cta">Try for free</a></li>
+          <li><a href="#how-it-works" class="main-nav-item how">How it works</a></li>
+          <li><a href="#meals" class="main-nav-item">Meals</a></li>
+          <li><a href="#testimonials" class="main-nav-item">Testimonials</a></li>
+          <li><a href="#pricing" class="main-nav-item">Pricing</a></li>
+          <li><a href="#cta" class="main-nav-item main-nav-cta">Try for free</a></li>
         </ul>
       </nav>
       <button class="mobile-nav">
-        <ion-icon name="menu-outline" class="mobile-nav-icon" onclick="openMenu()"></ion-icon>
-        <ion-icon name="close-outline" class="mobile-nav-icon" onclick="closeMenu()"></ion-icon>
+        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
       </button>
     </header>
     <main>
@@ -47,10 +54,10 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn-cta margin-right-sm"
+            <a href="#cta" class="btn btn-cta margin-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn btn-outline"
+            <a href="#how-it-works" class="btn btn-outline"
               >Learn more <span>&#x2193;</span></a
             >
             <div class="delivered-meals">
@@ -128,7 +135,7 @@
         </section>
       </section>
       <!--How it works section-->
-      <section class="how-it-works container">
+      <section class="how-it-works container" id="how-it-works">
         <span class="sub-heading">How it Works</span>
         <h2 class="secondary-header">
           Your daily dose of health in 3 simple steps
@@ -189,7 +196,7 @@
       </section>
 
       <!--Meals section-->
-      <section class="meals-section">
+      <section class="meals-section" id="meals">
         <div class="container">
           <span class="meals-sub-header">Meals</span>
           <h3 class="meals-header">Omnifood AI chooses from 5000+ recipes</h3>
@@ -503,7 +510,7 @@
       </section>
 
       <!--Testimonial and Gallery section-->
-      <section class="testimonial-gallery-section">
+      <section class="testimonial-gallery-section" id="testimonials">
         <div class="testimonial-gallery-container">
           <div class="testimonial">
             <span class="testimonial-sub-header">Testimonials</span>
@@ -661,7 +668,7 @@
       </section>
 
       <!--Pricing section-->
-      <section class="pricing-section container margin-bottom-md">
+      <section class="pricing-section container margin-bottom-md" id="pricing">
         <span class="pricing-sub-header">Pricing</span>
         <h3 class="pricing-header">Eating well without breaking the bank</h3>
         <div class="pricing">
@@ -696,7 +703,7 @@
                 >Get access to latest recipes
               </li>
             </ul>
-            <a href="#" class="btn btn-cta">Start eating well</a>
+            <a href="#cta" class="btn btn-cta">Start eating well</a>
           </figure>
           <figure class="rate-card rate-card--popular">
             <div class="pricing-type">COMPLETE</div>
@@ -732,7 +739,7 @@
                 >Get access to latest recipes
               </li>
             </ul>
-            <a href="#" class="btn btn-cta">Start eating well</a>
+            <a href="#cta" class="btn btn-cta">Start eating well</a>
           </figure>
         </div>
         <div class="pricing-tnc">
@@ -784,7 +791,7 @@
           </div>
         </div>
         <div class="feature">
-          <ion-icon
+            <ion-icon
             name="pause-outline"
             class="omnifood-icon omnifood-icon--feature"
           ></ion-icon>
@@ -798,7 +805,7 @@
         </div>
       </section>
       <!--Form to submit-->
-      <section class="submit-form-section">
+      <section class="submit-form-section" id="cta">
         <div class="container">
           <div class="grid grid--2-col-form">
             <div class="form-box">
@@ -934,15 +941,7 @@
       </div>
     </footer>
 
-    <script>
-      openMenu = () => {
-        document.getElementById('header').classList.add('nav-open');
-      };
-
-      closeMenu = () => {
-        document.getElementById('header').classList.remove('nav-open');
-      };
-    </script>
+    <script src="js/script.js"></script>
 
 <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
